@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Home/Navbar";
+import Navbar from "../components/Navbar";
 import Hero from "../components/Home/Hero";
 import Counter from "../components/Home/Counter";
 import Features from "../components/Home/Features";
@@ -9,7 +9,7 @@ import Partners from "../components/Home/Partners";
 // import Roadmap from "../components/Home/Roadmap";
 import Faq from "../components/Home/Faq";
 import About from "../components/Home/About";
-import Footer from "../components/Home/Footer";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
