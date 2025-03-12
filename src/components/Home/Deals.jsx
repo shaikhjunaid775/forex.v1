@@ -86,7 +86,7 @@ function Deals() {
             </div>
             <div class="col-12">
               <div class="deals">
-                <div class="deals__table-wrap">
+                <div class="deals__table-wrap overflow-auto">
                   <table class="deals__table">
                     <thead>
                       <tr>
