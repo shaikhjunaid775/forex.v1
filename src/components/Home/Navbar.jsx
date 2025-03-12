@@ -1,8 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "/assets/img/logo.svg"
+import { useState } from "react";
 
 function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
       <header className="header">
@@ -11,9 +13,10 @@ function Navbar() {
             <div className="col-12">
               <div className="header__content">
                 <button
-                  className="header__btn"
+                  className={`header__btn ${menuOpen ? "active" : ""}`}
                   type="button"
                   aria-label="header__nav"
+                  onClick={() => setMenuOpen(!menuOpen)}
                 >
                   <span></span>
                   <span></span>
@@ -27,7 +30,7 @@ function Navbar() {
                   HTML Template
                 </span>
 
-                <ul className="header__nav" id="header__nav">
+                <ul className={`header__nav ${menuOpen ? "open" : ""}`} id="header__nav">
                   <li className="header__dropdown">
                     <Link
                       className="dropdown-link"

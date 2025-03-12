@@ -71,11 +71,11 @@ function Deals() {
   ];
   return (
     <>
-      <section class="section">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
-              <div class="section__title">
+      <section className="section">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+              <div className="section__title">
                 <h2>Arbitration deals</h2>
                 <p>
                   Browse a curated list of real-time arbitrage deals, complete
@@ -84,10 +84,10 @@ function Deals() {
                 </p>
               </div>
             </div>
-            <div class="col-12">
-              <div class="deals">
-                <div class="deals__table-wrap overflow-auto">
-                  <table class="deals__table">
+            <div className="col-12">
+              <div className="deals">
+                <div className="deals__table-wrap overflow-auto">
+                  <table className="deals__table">
                     <thead>
                       <tr>
                         <th>Pair</th>
@@ -105,40 +105,40 @@ function Deals() {
                       {dealsData.map((deal, index) => (
                         <tr key={index}>
                           <td>
-                            <div class="deals__text">{deal.pair}</div>
+                            <div className="deals__text">{deal.pair}</div>
                           </td>
                           <td>
-                            <div class="deals__exchange">
+                            <div className="deals__exchange">
                               <img src={deal.exchangefrom} alt="" />
-                              <span class="green">{deal.exchangefromName}</span>
-                              <i class="ti ti-arrow-move-right"></i>
+                              <span className="green">{deal.exchangefromName}</span>
+                              <i className="ti ti-arrow-move-right"></i>
                               <img src={deal.exchangeto} alt="" />
-                              <span class="red">{deal.exchangetoName}</span>
+                              <span className="red">{deal.exchangetoName}</span>
                             </div>
                           </td>
                           <td>
-                            <div class="deals__text">{deal.date}</div>
+                            <div className="deals__text">{deal.date}</div>
                           </td>
                           <td>
-                            <div class="deals__text deals__text--buy">
-                              <i class="ti ti-currency-dollar"></i>{deal.buyingPrice}
+                            <div className="deals__text deals__text--buy">
+                              <i className="ti ti-currency-dollar"></i>{deal.buyingPrice}
                             </div>
                           </td>
                           <td>
-                            <div class="deals__text deals__text--sell">
-                              <i class="ti ti-currency-dollar"></i>{deal.sellingPrice}
+                            <div className="deals__text deals__text--sell">
+                              <i className="ti ti-currency-dollar"></i>{deal.sellingPrice}
                             </div>
                           </td>
                           <td>
-                            <div class="deals__text">${deal.dealAmount}</div>
+                            <div className="deals__text">${deal.dealAmount}</div>
                           </td>
                           <td>
-                            <div class="deals__text deals__text--green">
+                            <div className="deals__text deals__text--green">
                               +${deal.profit}
                             </div>
                           </td>
                           <td>
-                            <div class="deals__text">{deal.spread}%</div>
+                            <div className="deals__text">{deal.spread}%</div>
                           </td>
                         </tr>
                       ))}
@@ -146,16 +146,16 @@ function Deals() {
                   </table>
                 </div>
 
-                <span class="screw screw--lines-bl"></span>
-                <span class="screw screw--lines-br"></span>
-                <span class="screw screw--lines-tr"></span>
-                <span class="screw screw--lines-tl"></span>
+                <span className="screw screw--lines-bl"></span>
+                <span className="screw screw--lines-br"></span>
+                <span className="screw screw--lines-tr"></span>
+                <span className="screw screw--lines-tl"></span>
               </div>
             </div>
 
-            <div class="col-12">
-              <div class="section__btns">
-                <span class="section__btn">
+            <div className="col-12">
+              <div className="section__btns">
+                <span className="section__btn">
                   View reports
                 </span>
               </div>
