@@ -13,6 +13,7 @@ function Hero() {
                   <strong>Neural technology</strong> <br />
                   for arbitrage trading in the crypto industry
                 </h1>
+                <p className="text-white">Trade with the world’s largest retail broker and benefit from better-than-market conditions.</p>
 
                 <div className="hero__btns">
                   <Link className="hero__btn">Register</Link>

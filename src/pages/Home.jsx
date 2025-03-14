@@ -10,21 +10,21 @@ import Partners from "../components/Home/Partners";
 import Faq from "../components/Home/Faq";
 import About from "../components/Home/About";
 import Footer from "../components/Footer";
+import Feature2 from "../components/Home/Feature2";
 
 function Home() {
   return (
     <>
-      <Navbar />
       <Hero />
       <Counter />
       <Features />
+      <Feature2 />
       <Deals />
       <Investment />
       <Partners />
       {/* <Roadmap /> */}
       <Faq />
       <About />
-      <Footer />
     </>
   );
 }
